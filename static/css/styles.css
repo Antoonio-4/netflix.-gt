@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "Netflix-gt";
+    src: url("../../font/AvenirNextCondensed.ttc");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Netflix-gt";
+    src: url("../../font/Avenir.ttc");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Netflix-gt";
+    src: url("../../font/AvenirNext.ttc");
+    font-weight: 700;
+    font-style: normal;
+}
+
+.credits {
+    font-family: system-ui;
+    background: navy ;
+    font-size:  11px;
+    color: beige;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+  .credits a {
+color: darkorchid;
+text-decoration: none;
+}
+
+body {
+    background: black;
+    color: white;
+    margin: 0;
+    font-family: Netflix-gt;
+    padding-bottom: 108px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    padding-bottom: 100px;
+    padding: 15px 15px 100px;
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(to bottom, black 0% , black 50% , rgba(0,0,0 .5) 85% , transparent 100%);
+
+}
+.navigation-item {
+list-style: none;
+text-align: center;
+}
+
+.navigation {
+    padding: 0; 
+    margin: 0;
+display: grid;
+grid-template-columns: 100px;
+grid-auto-flow: column;
+justify-content: space-around;
+}
+
+.featured {
+    margin-top: -90px;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-details {
+    border: 1px solid red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to top, black 0%, transparent 100%);
+}
+
+
+.tags {
+display: flex;
+justify-content: center;
+gap: 10px;
+list-style: none;
+padding: 0;
+}
+
+.tag {
+display: flex;
+}
+
+.tag:before {
+content:"•";
+margin-right: 10px;
+position: relative;
+top: 2px;
+}
+
+.tag:first-child::before {
+    display: none;
+}
+
+.featurd-actions {
+
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2em;
+
+}
+
+.button {
+
+background: white;
+display: flex;
+align-items: center;
+padding: 2px 1em;
+border-radius: 3px;
+
+}
+
+.button::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+.button-secondary {
+background: none;
+color: white;
+font-size: 1.1em;
+min-width: 100px;
+cursor: pointer;
+border: none;
+}
+
+.button-secondary::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.icon-plus::before {
+    background-color: url("../../icons/plus.svg")
+}
+
+.icon-play::before {
+    background-color: url("../../icons/play.svg")
+}
+
+.icon-info::before {
+    background-color: url("../../icons/info.svg")
+}
+
+
+
+
+.list-content {
+    white-space: nowrap; 
+    overflow-x: auto;
+}
+
+.list-item {
+display: inline-block;
+margin-left: 10px;
+}
+
+.list-item:first-child {
+margin: 0;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+padding: 1em 0 0;
+}
+
+.tab-list {
+margin: 0;
+padding: 0;
+display: grid;
+grid-auto-flow: column;
+list-style: none;
+color: grey;
+}
+
+.tab-list a {
+    color: gray;
+}
+
+.tab-item {
+    text-align: center;
+
+}
+
+.tab-item svg {
+    display: block;
+    margin: auto;
+}
+
+.tab-item path{
+    fill: grey;
+}
+
+tab-item:hover :is(path, span) {
+    fill: white;
+    color: white;
+}
